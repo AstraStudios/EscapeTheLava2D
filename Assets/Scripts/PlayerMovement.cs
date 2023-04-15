@@ -15,8 +15,8 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float vertSpeed = 3f;
-        float horizSpeed = 2.5f;
+        float vertSpeed = 2.5f;
+        float horizSpeed = 1.5f;
         float verticalInput = Input.GetAxis("Vertical");
         float horizInput = Input.GetAxis("Horizontal");
         playerRigidbody.AddForce(new Vector2(horizInput * horizSpeed, verticalInput * vertSpeed));

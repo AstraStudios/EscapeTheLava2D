@@ -8,9 +8,9 @@ public class SpawnObsatacles : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < 100; i++)
+        for (int i = 0; i < 500; i++)
         {
-            Vector2 randPos = new Vector3(Random.Range(-200, 200), Random.Range(0, 200), 0);
+            Vector2 randPos = new Vector3(Random.Range(-150, 150), Random.Range(10, 500), 0);
             Instantiate(obstacle, randPos, Quaternion.identity);
         }
     }

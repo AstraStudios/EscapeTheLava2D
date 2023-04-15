@@ -18,12 +18,12 @@ public class GrowLava : MonoBehaviour
         Vector3 newScale = transform.localScale;
         newScale.y = scaleMultiple;
         transform.localScale = newScale;
-        if (transform.localScale.y < 4f)
+        if (transform.localScale.y < 15f)
         {
-            scaleMultiple += .001f;
+            scaleMultiple += .003f;
         }
         else {
-            scaleMultiple += .01f;
+            scaleMultiple += .06f;
         }
     }
 }
